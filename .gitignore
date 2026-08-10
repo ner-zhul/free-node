@@ -1,0 +1,18 @@
+#
+# project
+#
+/0dev/
+
+#
+# frame
+#
+
+#
+# language
+#
+/node_modules/
+
+#
+# ide
+#
+/.idea/
