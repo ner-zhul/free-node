@@ -1,6 +1,8 @@
 #
 # project
 #
+.wrangler/
+.dev.vars*
 /0dev/
 
 #
