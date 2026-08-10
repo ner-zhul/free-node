@@ -2,5 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "free-node",
   "main": "src/index.ts",
-  "compatibility_date": "2026-08-10"
+  "compatibility_date": "2026-08-08",
+  "triggers": {
+    "crons": ["*/30 * * * *"]
+  }
 }

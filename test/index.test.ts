@@ -11,4 +11,12 @@ describe("mergeProxies", () => {
     expect(result.map((proxy) => proxy.name)).toEqual(["one", "two", "three"]);
     expect(result).not.toContainEqual(expect.objectContaining({ rules: expect.anything() }));
   });
+
+  it("支持同一个 YAML 源中的多个文档", () => {
+    const result = mergeProxies([
+      "proxies:\n  - name: one\n    type: ss\n---\nproxies:\n  - name: two\n    type: vmess",
+    ]);
+
+    expect(result.map((proxy) => proxy.name)).toEqual(["one", "two"]);
+  });
 });
