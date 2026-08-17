@@ -2,7 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { parseAllDocuments, stringify } from "yaml";
 
 const sources = [
-  { github: "https://github.com/Barabama/FreeNodes", subscription: "https://raw.githubusercontent.com/Barabama/FreeNodes/refs/heads/feat/ai-crawler-v2/nodes/merged.yaml" },
+  // { github: "https://github.com/Barabama/FreeNodes", subscription: "https://raw.githubusercontent.com/Barabama/FreeNodes/refs/heads/feat/ai-crawler-v2/nodes/merged.yaml" },
   { github: "https://github.com/awesome-vpn/awesome-vpn", subscription: "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml" },
   { github: "https://github.com/vxiaov/free_proxies", subscription: "https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml" },
   { github: "https://github.com/snakem982/proxypool", subscription: "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml" },
