@@ -49,10 +49,9 @@ async function main() {
   const documents = results.filter(Boolean);
   if (documents.length === 0) throw new Error("所有数据源都获取失败");
 
-  await mkdir("src/public", { recursive: true });
   const proxies = mergeProxies(documents);
-  await writeFile("src/public/proxy.yml", stringify({ proxies }));
-  console.log(`已生成 src/public/proxy.yml，包含 ${proxies.length} 个节点`);
+  await writeFile("src/proxy.yml", stringify({ proxies }));
+  console.log(`已生成 src/proxy.yml，包含 ${proxies.length} 个节点`);
 }
 
 main().catch((error) => {
