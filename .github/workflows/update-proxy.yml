@@ -24,7 +24,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/proxy.yml
+          git add src/free-node.yml
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -36,4 +36,4 @@ jobs:
         if: steps.commit.outputs.changed == 'true'
         run: |
           curl --fail --retry 3 --silent --show-error \
-            "https://purge.jsdelivr.net/gh/${{ github.repository }}@master/src/proxy.yml"
+            "https://purge.jsdelivr.net/gh/${{ github.repository }}@master/src/free-node.yml"

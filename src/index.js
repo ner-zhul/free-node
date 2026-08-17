@@ -50,8 +50,8 @@ async function main() {
   if (documents.length === 0) throw new Error("所有数据源都获取失败");
 
   const proxies = mergeProxies(documents);
-  await writeFile("src/proxy.yml", stringify({ proxies }));
-  console.log(`已生成 src/proxy.yml，包含 ${proxies.length} 个节点`);
+  await writeFile("src/free-node.yml", stringify({ proxies }));
+  console.log(`已生成 src/free-node.yml，包含 ${proxies.length} 个节点`);
 }
 
 main().catch((error) => {
