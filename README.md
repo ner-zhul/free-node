@@ -7,13 +7,13 @@
 推荐使用 jsDelivr：
 
 ```text
-https://cdn.jsdelivr.net/gh/ner-zhul/free-node@master/public/proxy.yml
+https://cdn.jsdelivr.net/gh/ner-zhul/free-node@master/src/public/proxy.yml
 ```
 
 备用地址（GitHub Raw）：
 
 ```text
-https://raw.githubusercontent.com/ner-zhul/free-node/master/public/proxy.yml
+https://raw.githubusercontent.com/ner-zhul/free-node/master/src/public/proxy.yml
 ```
 
 ## 二维码
